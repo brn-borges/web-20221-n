@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 03</title>
+</head>
+<body>
+    <h1>Carteira</h1>
+    <p>Dinheiro na Carteira</p>
+    <div id="result"></div>
+    <script>
+        let carteira = 50
+        let dolares = carteira * 5.07
+        let verResult = document.getElementById("result")
+        let mostrar = document.createElement("p")
+        mostrar.innerHTML = `Valor da Carterira em R$ ${carteira} <br>
+        Valor da Carteira em $ ${dolares}`
+        verResult.appendChild(mostrar)
+    </script>
+</body>
+</html>

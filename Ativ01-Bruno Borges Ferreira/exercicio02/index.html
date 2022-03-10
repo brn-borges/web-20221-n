@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>Exercicio 02</title>
+</head>
+<body>
+    <p> Ano de Nascimento </p>
+    <input type="number" id="nasc">
+    <p> Ano Atual </p>
+    <input type="number" id="atual">
+    <button id="clicar">Clicar</button>
+    <p>Idade Atual</p>
+    <div id="resultado">
+
+    </div>
+    <script>
+        let nascAno = document.getElementById("nasc")
+        let anoAtual = document.getElementById("atual")
+        let result = document.getElementById("resultado")
+        let clicar = document.getElementById("clicar")
+        clicar.addEventListener('click', Amostrar)
+
+        let anoNasc = parseInt(nascAno.value) 
+        let atualAno = parseInt(anoAtual.value)
+        
+        let idade =  atualAno - anoNasc 
+        let ano2050 = 2050 - anoNasc
+
+        function Amostrar(){
+               
+        let mostrar = document.createElement("p")
+        mostrar.innerHTML = `Ano de Nascimento: ${nascAno.value} 
+        <br> Ano Atual: ${anoAtual.value} 
+        <br> Idade Atual: ${idade} 
+        <br> Idade no Ano 2050: ${ano2050}`
+        result.appendChild(mostrar)
+
+        }
+    </script>
+</body>
+</html>
