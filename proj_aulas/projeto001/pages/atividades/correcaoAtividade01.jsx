@@ -10,10 +10,23 @@ function lista(){
     return tmp
 }
 
+function lista2(n){
+    const tmp = []
+    for(let i=0; i<=n; i++){
+        tmp.push(<span>{i},</span>)
+    }
+    return tmp
+}
+
 export default function init(){
     return (
         <div>
-            {lista()}
+            <div>
+                {lista2(5)}
+            </div>
+            <div>
+                {lista2(50)}
+            </div>
         </div>
     )
 }
