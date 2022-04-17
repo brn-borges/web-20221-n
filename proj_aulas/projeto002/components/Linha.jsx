@@ -11,7 +11,6 @@ export default function init(props){
             <Celula preta={!props.preta}></Celula>
             <Celula preta={props.preta}></Celula>
             <Celula preta={!props.preta}></Celula>
-
         </div>
     )
 }
