@@ -1,5 +1,8 @@
-export default function filho(props){
+export default function Filho(props){
     return(
-        <h1>Filho - Indireto</h1>
+        <div>
+            <h1>Filho - Indireto</h1>
+            <button onClick={props.funcao}>Chama Pai</button>
+        </div>
     )
 }
