@@ -7,6 +7,10 @@ export default function init(){
         console.log("Ação 2")
     }
 
+    function acao5(e){
+        console.log(e)
+    }
+
     return (
         <div>
             <button onClick={acao1}>Clique 1</button>
@@ -14,7 +18,13 @@ export default function init(){
             <button onClick={function (){
                 console.log("Ação 3")
             }}>Clique 3</button>
-            <button onClick={()=> console.log("Ação 4")}>Clique 4</button>            
+            <button onClick={()=> console.log("Ação 4")}>Clique 4</button>  
+            <button onClick={acao5}>Clique 5</button>
+            <button onClick={e=>acao5(e.altKey)}>Clique 5 v2</button> 
+
+            <div>
+                <input type="text" onChange={e=>console.log(e.target.value)}/>
+            </div>
         </div>
     )
 }
