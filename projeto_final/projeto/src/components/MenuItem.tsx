@@ -8,7 +8,7 @@ interface MenuItemProps{
 
 export default function MenuItem(props: MenuItemProps){
     return (
-        <li>
+        <li className={`hover:bg-gray-200`}>
             <Link href={props.url}>
                 <a>
                     {props.icone}
