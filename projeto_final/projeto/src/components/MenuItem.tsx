@@ -1,3 +1,4 @@
+import Link from "../../node_modules/next/link"
 
 interface MenuItemProps{
     url: string
@@ -8,7 +9,14 @@ interface MenuItemProps{
 export default function MenuItem(props: MenuItemProps){
     return (
         <li>
-            {props.icone}
+            <Link href={props.url}>
+                <a>
+                    {props.icone}
+                    <span>
+                        {props.texto}
+                    </span>
+                </a>
+            </Link>
         </li>
     )
 }
