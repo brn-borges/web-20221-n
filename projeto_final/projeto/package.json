@@ -9,7 +9,15 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@fullcalendar/core": "^5.11.0",
+    "@fullcalendar/daygrid": "^5.11.0",
+    "@fullcalendar/react": "^5.11.1",
+    "@fullcalendar/timegrid": "^5.11.0",
+    "@next-tools/dynamic": "^0.0.11",
+    "@zeit/next-css": "^0.0.6",
+    "@zeit/next-sass": "^0.0.6",
     "next": "12.1.6",
+    "node-sass": "^7.0.1",
     "react": "18.1.0",
     "react-dom": "18.1.0"
   },
