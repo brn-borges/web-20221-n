@@ -1,4 +1,4 @@
-import { iconeAjustes, iconeCadastroCliente, iconeCasa, iconeSair, iconeTabuleiro} from "./icons/index";
+import { iconeAjustes, iconeCadastroCliente, iconeCasa, iconeClientes, iconeSair, iconeTabuleiro} from "./icons/index";
 import MenuItem from "./MenuItem";
 import Logo from "./Logo";
 
@@ -13,6 +13,9 @@ export default function MenuLateral(){
             </ul>
             <ul>
                 <MenuItem url="cadastroCliente" texto="Cad. Cliente" icone={iconeCadastroCliente}></MenuItem>
+            </ul>
+            <ul>
+                <MenuItem url="clientes" texto="Clientes" icone={iconeClientes}></MenuItem>
             </ul>
             <ul>
                 <MenuItem url="tabuleiro" texto="Tabuleiro" icone={iconeTabuleiro}></MenuItem>
