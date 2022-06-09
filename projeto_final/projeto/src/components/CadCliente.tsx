@@ -7,7 +7,7 @@ interface CadClienteProps {
 
 export default function CadCliente(props:CadClienteProps){
     return (
-        <div className="w- flex flex-col mt-4">
+        <div className="w flex flex-col mt-4">
             <label>{props.label}</label>
             <input type={props.tipo ?? 'text'} 
                 value={props.valor}
